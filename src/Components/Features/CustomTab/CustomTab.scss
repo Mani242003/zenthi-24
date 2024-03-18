@@ -1,0 +1,138 @@
+@import "../../../Styles/variables";
+@import "../../../Styles/constant";
+
+.Custom-tab_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background: #F8F9FB;
+    .Custom-tab_container>div{
+        flex: 1;
+    }
+    .Custom-tab_container_col1{
+        padding: 5rem 0;
+        @include flexColBetween;
+        width: 33.3%;
+        
+        gap: 2rem;
+
+
+    }
+    .Custom-tab_col2_outer-container{
+        // @include flexCenter;
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        
+
+        .Custom-tab_container_col2{
+            width: 100%;
+        
+            position: relative;
+            padding: 1rem ;
+            
+           
+    
+           
+            .client_phone-1{
+                position: absolute;
+                width: 220px;
+              
+            }
+            .client_phone-2{
+                position: absolute;
+                width: 280px;
+                left: 8rem;
+            
+                
+            }
+    
+        }
+    }
+    
+    .Custom-tab_container_col3{
+        padding: 5rem 0;
+        @include flexColBetween;
+        width: 33.3%;
+        gap: 2rem;
+        padding-left: 1rem;
+
+        // background: red;
+
+
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .Custom-tab_container{
+        // width: 100%;
+        // display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        // background: #F8F9FB;
+        position: relative;
+        padding: 0 0.7rem;
+        
+        .Custom-tab_container_col1{
+            // position: absolute;
+            position: relative;
+            
+            padding: 0rem;
+            width: 100%;
+            // gap: 2rem;s
+        }
+        .Custom-tab_col2_outer-container{
+           
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            .Custom-tab_container_col2{
+                width: 100%;
+                position: relative;
+                padding: 1rem 0rem;
+                // padding: 1rem ;
+                // display: none;
+                
+               
+        
+               
+                .client_phone-1{
+                    position:absolute;
+                    width: 160px;
+                    left: 1rem;
+    
+                  
+                }
+                .client_phone-2{
+    
+                    position: absolute;
+                    width: 200px;
+                    left: 6rem;
+                
+                    
+                }
+        
+            }
+
+        }
+        
+        
+        .Custom-tab_container_col3{
+            // position: relative;
+            padding: 0rem 0;
+            padding: 0rem;
+            
+            padding-top:26rem;
+        
+            
+
+            width: 100%;
+            gap: 0,rem;
+    
+            // background: red;
+    
+    
+        }
+    }
+    
+}

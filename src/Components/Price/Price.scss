@@ -1,0 +1,101 @@
+@import "../../Styles/constant";
+@import "../../Styles/variables";
+
+
+  .price_wrapper {
+    .price_container {
+      flex-direction: column;
+      padding: 10px 20px;
+      padding-bottom: 20px;
+
+
+      .price_col1 {
+        width: 100%;
+      text-align: center;
+      padding: 10px 0;
+
+        .price_col1_text1 {
+          // @include TitleResponsive;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #EE5312;
+          // text-transform: uppercase;
+          text-shadow: 0 0 2px #EE5312,
+          // margin: 10px 0;
+          // padding: 100px 0;
+          // display: none
+
+        }
+        .price_col1_text2 {
+          // @include DescriptionResponsive;
+        }
+        .price_col1_button_container {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 1rem;
+          margin: 1% 0;
+          margin-bottom: 2%;
+        }
+      }
+      .price_col3 {
+        @include flexCenter;
+        padding-left: 0rem;
+      }
+      .price_col2 {
+        padding-left: 0rem;
+        @include flexCenter;
+      }
+    }
+  }
+
+@media screen and (min-width: 769px) {
+  .price_wrapper {
+    .price_container {
+      flex-direction: column;
+      padding: 10px 20px;
+      padding-bottom: 20px;
+
+
+      .price_col1 {
+        width: 100%;
+      text-align: center;
+      padding: 10px 0;
+
+
+        .price_col1_text1 {
+          // @include TitleResponsive;
+          font-size: 36px;
+          font-weight: 700;
+          color:#EE5312 ;
+          opacity: 0.8;
+
+        }
+        .price_col1_text2 {
+          // @include DescriptionResponsive;
+        }
+        .price_col1_button_container {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 1rem;
+          margin: 1% 0;
+          margin-bottom: 2%;
+        }
+      }
+      .price_col3 {
+        @include flexCenter;
+        padding-left: 0rem;
+      }
+      .price_col2 {
+        padding-left: 0rem;
+        @include flexCenter;
+      }
+    }
+  }
+}

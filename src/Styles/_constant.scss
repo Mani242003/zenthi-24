@@ -1,0 +1,97 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexColStart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@mixin flexColAlignCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexColCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+@mixin flexColEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+@mixin flexColBetween {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+@mixin flexRowStart {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+@mixin Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  outline: none;
+  color: white;
+  background-color: $primary-color;
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@mixin ButtonHover {
+  color: "#F43F5E";
+  border: 1px solid $primary-color;
+  background: transparent;
+  font-weight: 500;
+}
+@mixin Title {
+  font-size: 43px;
+  font-weight: 700;
+  color: $secondary-color;
+  opacity: 0.8;
+  span {
+    color: #EE5312;
+    opacity: 1;
+  }
+}
+@mixin TitleResponsive {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: start;
+}
+@mixin Description {
+  font-size: 18px;
+  opacity: 0.8;
+  color: $secondary-color;
+}
+
+@mixin DescriptionResponsive {
+  font-size: 15px;
+  opacity: 0.8;
+  color: $secondary-color;
+  text-align: start;
+}

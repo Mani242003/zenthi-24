@@ -1,0 +1,145 @@
+@import "../../Styles/constant";
+@import "../../Styles/variables";
+.marketPlan_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem $md-gap;
+    padding-bottom: 0;
+    gap: 2rem;
+    .marketPlan_top_container{
+        .marketPlan_top_text{
+            @include Title;
+        }
+
+    }
+    .marketPlan_middle_container{
+        display: flex;
+        padding: 0 5rem;
+        gap: 3rem;
+        .marketPlan_middle_content_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 1rem;
+            // padding: 1 2rem;
+            img{
+                width: 100px;
+            }
+            .marketPlan_middle_content_inner_titel{
+                font-size: 30px;
+                text-wrap: nowrap;
+
+            }
+            .marketPlan_middle_content_inner_des{
+                font-size: 13px;
+
+            }
+
+        }
+    }
+    .marketPlan_bottom_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        .marketPlan_bottom_text{
+            letter-spacing: 1px;
+            font-size: 19px;
+            span{
+                color: $primary-color;
+            }
+        }
+        .marketPlan_bottom_img_container{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            .marketPlan_bottom_img1{
+                width: 10rem;
+
+            }
+            .marketPlan_bottom_img2{
+                width: 18rem;
+
+            }
+            
+        }
+
+
+    }
+
+}
+@media screen and (max-width: 769px) {
+    .marketPlan_container{
+       
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+        .marketPlan_top_container{
+            .marketPlan_top_text{
+                @include TitleResponsive;
+            }
+    
+        }
+        .marketPlan_middle_container{
+            flex-direction: column;
+            padding: 0 1rem;
+            gap: 2rem;
+            .marketPlan_middle_content_container{
+                
+                gap: 0.5rem;
+                // padding: 1 2rem;
+                img{
+                    width: 75px;
+                }
+                .marketPlan_middle_content_inner_titel{
+                    font-size: 22px;
+                    font-weight: 600;
+    
+                }
+                .marketPlan_middle_content_inner_des{
+                    font-size: 13px;
+    
+                }
+    
+            }
+        }
+        .marketPlan_bottom_container{
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // text-align: center;
+            // flex-direction: column;
+            // gap: 1rem;
+            .marketPlan_bottom_text{
+                letter-spacing: 1px;
+                font-size: 15px;
+                span{
+                    color: $primary-color;
+                }
+            }
+            .marketPlan_bottom_img_container{
+                flex-direction: column;
+                gap: 0.5rem;
+               
+                .marketPlan_bottom_img1{
+                    width: 6rem;
+    
+                }
+                .marketPlan_bottom_img2{
+                    width: 13rem;
+    
+                }
+                
+            }
+    
+    
+        }
+    
+    }
+    
+}

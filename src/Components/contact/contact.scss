@@ -1,0 +1,217 @@
+@import "../../Styles//constant";
+@import "../../Styles/variables";
+
+.contact_container {
+  .form {
+    grid-area: form;
+    
+  }
+  .info {
+    grid-area: info;
+  }
+  .map {
+    grid-area: map;
+    
+  }
+
+  width: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+
+  .contact_box {
+    position: relative;
+    padding-left: 2rem;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+      "form info"
+      "form map";
+    // gap: 30px;
+    .contact {
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color:#F9FBF9;
+      .contact_header_title{
+        font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #EE5312;
+      // text-transform: uppercase;
+      text-shadow: 0 0 2px #EE5312,
+      }
+      .contact_right_bottom_des{
+        font-size: 40px;
+        .contact_inner_span {
+          // @include Title;
+          color:black;
+          opacity: 0.8;
+          // font-size: 15px;
+          
+        }
+
+      }
+   
+
+      
+    }
+
+    .info{
+        width: 100%;
+       .contactinfoBorder{
+        border-bottom: 2px solid ;
+        margin-bottom: 1rem;padding-bottom: 0.5rem;
+        padding: 0;   
+    }
+       .contact_right_bottom_header{
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+       }
+       .contact_right_bottom_des{
+        @include Description;
+        font-weight: 500;
+       }
+
+    }
+  }
+}
+.map{
+    padding: 0;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .contact_container {
+      
+      padding: 0rem 0rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin-top: 100px;
+      
+      
+        .contact_box {
+    padding-left: 0rem;
+          
+          grid-template-columns:1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "form" 
+            "info"
+            "map";
+
+           
+
+            .contact {
+                // padding: 10px;
+                // padding: 1rem 1.5rem;
+                // span {
+                //   // @include TitleResponsive;
+                //   font-size: 20px;
+                // }
+               
+          
+                .form_box {
+                 
+                  
+          
+                  .row50 {
+                    flex-direction: column;
+                    gap: 0rem;
+                    .inputBox {
+                     
+                      width: 100%;
+                      span {
+                        font-size: 15px;
+                      }
+                      input{
+                          outline: none;
+                          padding: 10px;
+                          border: 0px solid #333;
+                          border-radius: 5px;
+                          color: black;
+                          opacity: 0.8;
+          
+                      }
+                    }
+                  }
+                  .row100 {
+                    width: 100%;
+                    span{
+                        font-size: 15px;
+                        opacity: 0.8;
+                        color: black;
+                    }
+                    
+          
+                    .inputBox {
+                      width: 100%;
+                  
+                      textarea {
+                        width: 100%;
+                        padding: 10px;
+                        min-height: 120px;
+          
+                      
+                        outline: none;
+                        padding: 10px;
+                        border: 0px solid #333;
+                        border-radius: 5px;
+                        color: black;
+                        opacity: 0.8;
+                        font-size: 1.1em;
+                        margin-bottom: 1rem;
+                        
+                      }
+                    }
+          
+                    input {
+          
+                      padding: 0.5rem 0.7rem;
+                      font-weight: 400;
+                      
+                      // padding: 10px;
+                      border-radius: 5px;
+                      
+                      // font-size: 1.1em;
+                      // margin-top: 1.5rem;
+                      letter-spacing: 1px;
+          
+                      
+                    }
+                  }
+                }
+              }
+
+              .info{
+            
+               
+               .contact_right_bottom_des{
+                // @include DescriptionResponsive;
+                font-size: 17px;
+                font-weight: 600;
+                font-family: 'Open Sans', sans-serif;
+                .contact_inner_span{
+                  font-weight: 400;
+                  font-size: 16px;
+                }
+                
+                
+               }
+        
+            }
+
+        }}
+        .map{}
+
+
+}
+

@@ -1,0 +1,32 @@
+@import "../../../../Styles/constant";
+@import "../../../../Styles/variables";
+
+.customTabItemsRight_container{
+    width: 100%;
+   display: flex;
+   gap: 15px;
+  
+   .customTabItemsRight_left_container{
+    svg{
+        color: $primary-color;
+        font-size: 55px;
+        
+    }
+
+   }
+   .customTabItemsRight_right_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .customTabItemsRight_left_header{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    }
+    .customTabItemsRight_left_des{
+        text-align: start;
+
+    }
+   }
+}

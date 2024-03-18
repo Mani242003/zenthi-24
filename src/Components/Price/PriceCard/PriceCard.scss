@@ -1,0 +1,100 @@
+@import "../../../Styles/constant";
+@import "../../../Styles/variables";
+
+
+.priceCard_container{
+    width: 20rem;
+    height: 35rem;
+    background: white;
+    // @include flexColStart;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    // align-items: center;
+    text-align: start;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;    padding: 3rem 2rem;
+    opacity: 0.8;
+    margin-top: 3%;
+  
+    
+    
+span{
+    // margin: 5px 0;
+    margin: 1px 0;
+    color: $secondary-color;
+    opacity: 0.8;
+    display: flex;
+    margin-bottom: 1%;
+    gap: 0.5rem;
+    svg{
+        color: #EE5312;
+
+        margin-right: 1%;
+    }
+
+}
+    .priceCard_text1{
+        color: $secondary-color;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+
+
+    }
+    .priceCard_amout_container{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid gray;
+        span{
+            color: $secondary-color;
+            opacity: 0.8;
+            font-size: 35px;
+            font-weight: 800;
+
+            
+        }
+        
+    }
+    .priceCard_button{
+        margin-top: 2rem;
+        width: 70%;
+        outline: none;
+        border: none;
+        padding: 0.7rem 2rem;
+    border-radius: 5px;
+    // border: 1px solid $primary-;
+    letter-spacing: 1px;
+    color: $primary-color;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 12%;
+
+    }
+    .priceCard_button:hover{
+        opacity: 0.9;
+    }
+    .customButton{
+        background: #EE5312;
+        color: white;
+        margin-left: 12%;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+    .register_span{
+        padding: 5px 10px;
+        margin-top: 20px;
+        border: 2px solid silver;
+    }
+    
+
+    // justify-content: center;
+    
+
+    
+
+}
+.customCard{
+    border-top: 10px solid #EE5312;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}

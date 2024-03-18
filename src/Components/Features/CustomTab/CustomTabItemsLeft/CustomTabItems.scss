@@ -1,0 +1,58 @@
+@import "../../../../Styles/constant";
+@import "../../../../Styles/variables";
+
+.customTabItems_container{
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+   .customTabItems_left{
+    @include flexColEnd;
+    gap: 1rem;
+    .customTabItems_left_header{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    }
+    .customTabItems_left_des{
+        text-align: end;
+
+    }
+   }
+   .customTabItems_right{
+    svg{
+        color: $primary-color;
+        font-size: 55px;
+    }
+
+   }
+}
+
+@media screen and (max-width: 769px) {
+
+    .customTabItems_container{
+    //     width: 100%;
+    //    display: flex;
+       flex-direction: row-reverse;
+       gap: 15px;
+    .customTabItems_left{
+        // display: flex;
+        // flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        .customTabItems_left_header{
+        // font-weight: 700;
+        // font-size: 20px;
+        // letter-spacing: 1px;
+    
+        }
+        .customTabItems_left_des{
+            text-align: start;
+    
+        }
+       }
+    }
+
+   
+
+}
