@@ -10,7 +10,7 @@ const CountDown = () => {
   const [currentDate, setcurrentDate] = useState(inputDate);
   let interval = useRef();
   const startTimer = () => {
-    const countdownDate = new Date('Mar 27, 2024 00:00:00').getTime();
+    const countdownDate = new Date('April 10, 2024 00:00:00').getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

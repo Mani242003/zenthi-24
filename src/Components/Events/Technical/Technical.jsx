@@ -14,13 +14,13 @@ const Technical = () => {
       <div className="tech_container"  >
         <span className="title">Technical Events</span>
        <div className="tect_content1">
-       <N_T_C name="1.BUGZEN" sub_name=" (Bug Fixing)" img={bug} time1="10:00" time2="12:30"  />
-        <N_T_C name="2.QUIZEN" sub_name="(Technical Quiz)" img={quiz} time1="10:00" time2="12:30"  />
-        <N_T_C name="3.THESISZEN" sub_name="(Paper Presentation)" img={PPT} time1="10:00" time2="12:30"  />
+       <N_T_C name="1.BUGZEN" sub_name=" (Bug Fixing)" img={bug} time1="10:00" time2="3:00"  />
+        <N_T_C name="2.QUIZEN" sub_name="(Technical Quiz)" img={quiz} time1="10:00" time2="3:00"  />
+        <N_T_C name="3.THESISZEN" sub_name="(Paper Presentation)" img={PPT} time1="10:00" time2="3:00"  />
        </div>
         <div className="tectcontent2">
-        <N_T_C name="4.WEBZEN" sub_name="(Web Designing)" img={web} time1="10:00" time2="112:30"  />
-        <N_T_C name="5.CODEZEN" sub_name="(Battel of Code)" img={battel} time1="10:00" time2="12:30"  />
+        <N_T_C name="4.WEBZEN" sub_name="(Web Designing)" img={web} time1="10:00" time2="3:00"  />
+        <N_T_C name="5.CODEZEN" sub_name="(Battel of Code)" img={battel} time1="10:00" time2="3:00"  />
         </div>
         
      

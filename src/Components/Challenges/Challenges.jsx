@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import "./Challenges.scss";
-import banner from "../../Images/2024/ZENIThf.png";
+import banner from "../../Images/2024/bannerNew.jpeg";
 
 const Challenges = () => {
   return (

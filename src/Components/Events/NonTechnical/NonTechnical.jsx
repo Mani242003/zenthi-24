@@ -19,14 +19,14 @@ const NonTechnical = () => {
 
 
       <div className="N_T_C_1" >
-        <N_T_C name="1.E-Games" sub_name="(PUBG,FREE FIRE)" img={eGames} time1="11:30" time2="1:30" />
-        <N_T_C id={true} name="2.Treasure Hunt"  img={treasureHunt} time1="11:30" time2="1:30" />
-        <N_T_C name="3.Food Fun" img={foodFun} time1="11:30" time2="1:30" />
+        <N_T_C name="1.E-Games" sub_name="(PUBG,FREE FIRE)" img={eGames} time1="10:00" time2="3:00" />
+        <N_T_C id={true} name="2.Treasure Hunt"  img={treasureHunt} time1="10:00" time2="3:00" />
+        <N_T_C name="3.Food Fun" img={foodFun} time1="10:00" time2="3:00" />
          
       </div>
       <div className="N_T_C_2">
-      <N_T_C id={true} name="4.Murder Mystery"  img={mm} time1="11:30" time2="1:30" />
-      <N_T_C  name="5.Connection"  img={connection} time1="11:30" time2="1:30" />
+      <N_T_C id={true} name="4.Murder Mystery"  img={mm} time1="10:00" time2="3:00" />
+      <N_T_C  name="5.Connection"  img={connection} time1="10:00" time2="3:00" />
 
       </div>
 

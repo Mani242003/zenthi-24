@@ -3,11 +3,9 @@ import React, {
   useEffect,
   useRef,
   Suspense,
-  CSSProperties,
 } from "react";
 import "./App.scss";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
+
 
 import Slider from "./Components/Slider/SliderComponent";
 import Price from "./Components/Price/Price";
@@ -18,9 +16,8 @@ import Events from "./Components/Events/Events";
 import Technical from "./Components/Events/Technical/Technical";
 import NonTechnical from "./Components/Events/NonTechnical/NonTechnical";
 import Guest from "./Components/Guest/Guest";
-import videobg from "./Images/2024/v7.mp4";
+import videobg from "./Images/2024/slider/comv7.mp4";
 import logo from "./Images/2024/hdLogo.png";
-import BeatLoader from "react-spinners/BeatLoader";
 
 
 const Components1 = React.lazy(() => import("./Components/Home/Home"));
@@ -29,7 +26,6 @@ const Components2 = React.lazy(() => import("./Components/Navbar/Navbar"));
 const App = () => {
   const videoRef = useRef(null);
   // let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#EE5312");
 
   useEffect(() => {
     if (videoRef.current) {
@@ -37,7 +33,6 @@ const App = () => {
     }
   }, []);
   const [loader, setLoader] = useState(true);
-  const ref = useRef();
   useEffect(() => {
     const fakeDataFetch = () => {
       setTimeout(() => {
