@@ -34,9 +34,9 @@ const Guest = () => {
         />
         <GuestCard
           img={guest4}
-          name="HOD"
+          name="PRINCIPAL"
           des="Dr.Ramesh Babu Durai, M.E..Ph.D"
-          customName= "Department of Information Technology"
+          customName= ""
         />
       </div>
      </div>

@@ -25,7 +25,6 @@ const Components2 = React.lazy(() => import("./Components/Navbar/Navbar"));
 
 const App = () => {
   const videoRef = useRef(null);
-  // let [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -59,13 +58,7 @@ const App = () => {
                   flexDirection:'column'
                 }}
               >
-                {/* <BeatLoader  
-                   color={color}
-                  // cssOverride={override}
-                  size={25}
-                  aria-label="Loading Spinner"
-                  data-testid="loader"
-                />  */}
+             
                 <img src={logo} alt="" width={150} />
             <span style={{cursor:"pointer"}} className="NavLogoText">ZENITh24"</span>
              
@@ -88,7 +81,6 @@ const App = () => {
         <NonTechnical />
 
         <Slider />
-        {/* <MarketPlan /> */}
 
         <Price />
         <Guest />
